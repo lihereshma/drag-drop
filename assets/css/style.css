@@ -107,7 +107,12 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header li a{ color: #fff; }
+header li a:hover{ color: #7c7c; }
+
+header li a{ 
+  color: #fff; 
+  font-weight: 1000;
+}
 
 header .wrapper{
   background-color: #000;
