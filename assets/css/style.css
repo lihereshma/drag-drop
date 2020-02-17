@@ -85,6 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 a { 
@@ -106,12 +107,19 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header li a{ color: #fff; }
 
+header .wrapper{
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
 
-
-
-
-
+header li:not(:last-child):after{
+  content: '|';
+  color: #fff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -134,13 +142,10 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
-
-
+footer .wrapper{
+  background-color: #000;
+  padding: 1%;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
