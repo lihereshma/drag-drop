@@ -30,10 +30,10 @@
         </h1>
         <ul>
           <li>
-            <a href="#FIXME">start</a>
+            <input id = "result" type="button" value="start">
           </li>
           <li>
-            <a href="#FIXME">restart</a>
+            <input id = "restart" type="button" value="restart">
           </li>
         </ul>
       </div>
@@ -44,15 +44,24 @@
       <div class="wrapper">
         <h2>set your priorities</h2>
         <ul class="dropbox">
-          <li class="drag-zone"><span>high</span></li>
-          <li class="drag-zone"><span>medium</span></li>
-          <li class="drag-zone"><span>low</span></li>          
+          <li class="drop-zone" id="dropZone">
+            <span class="red">high</span>
+            <div class="box" id="box-one"></div>
+          </li>
+          <li class="drop-zone">
+            <span class="orange">medium</span>
+            <div class="box" id="box-two"></div>
+          </li>
+          <li class="drop-zone">
+            <span class="yellow">low</span>
+            <div class="box" id="box-three"></div>
+          </li>          
         </ul>
-        <ul class="task-list">
-          <li class="task">task1</li>
-          <li class="task">task2</li>
-          <li class="task">task3</li>
-          <li class="task">task4</li>
+        <ul class="drag-zone">
+          <li class="task" id="task-one">task 1</li>
+          <li class="task" id="task-two">task 2</li>
+          <li class="task" id="task-three">task 3</li>
+          <li class="task" id="task-four">task 4</li>
         </ul>
       </div>
     </main>
