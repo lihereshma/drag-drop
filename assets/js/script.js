@@ -23,7 +23,7 @@ btn.addEventListener("click",function(){
         for(let i=0;i<a.length;i++){
             a[i].draggable = false;
         }
-        btn.value = "START"; 
+        btn.value = "start"; 
     }
     
 });
